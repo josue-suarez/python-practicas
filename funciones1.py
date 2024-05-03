@@ -6,16 +6,25 @@
 # La función retorna el número de veces que se ha impreso el número en lugar de los textos.
 
 def funcion(ls_string1, ls_string2):
-    for i in 100:
-        if i % 3 == 0:
+    ln_acumulador = 0
+    for i in range(1, 101):
+        if i % 3 == 0 and i % 5 == 0:
+            print(ls_string1 + ls_string2)
+            ln_acumulador += 1
+        elif i % 3 == 0:
             print(ls_string1)
+            ln_acumulador += 1
         elif i % 5 == 0:
             print(ls_string2)
-        elif i % 3 == 0 and i % 5 == 0:
-            print(ls_string1 + ls_string2)
-    return i
+            ln_acumulador += 1
+    return ln_acumulador
 
 def main():
     gs_texto1 = input("Introduzca texto a:")
     gs_texto2 = input("Introduzca texto b:")
-    funcion(gs_texto1, gs_texto2)
+    gn_acumulador = funcion(gs_texto1, gs_texto2)
+    print("Número de veces impreso:", gn_acumulador)
+
+if __name__ == "__main__":
+    main()
+
