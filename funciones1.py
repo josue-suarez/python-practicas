@@ -5,7 +5,7 @@
 #  - Si el número es múltiplo de 3 y de 5, muestra las dos cadenas de texto concatenadas.
 # La función retorna el número de veces que se ha impreso el número en lugar de los textos.
 
-def funcion(ls_string1, ls_string2):
+def funcion(ls_string1, ls_string2) -> int:  # Indica tipo retorno
     ln_acumulador = 0
     for i in range(1, 101):
         if i % 3 == 0 and i % 5 == 0:
@@ -17,6 +17,8 @@ def funcion(ls_string1, ls_string2):
         elif i % 5 == 0:
             print(ls_string2)
             ln_acumulador += 1
+        else:
+            print(i)
     return ln_acumulador
 
 def main():
