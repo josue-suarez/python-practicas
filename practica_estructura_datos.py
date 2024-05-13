@@ -8,7 +8,7 @@
 #   de 11 dígitos (o el número de dígitos que quieras).
 # - También se debe proponer una operación de finalización del programa.
 
-def buscar_contacto():
+def buscar_contacto()
 
 def nuevo_contacto(ls_nombre, ln_telefono):
     print("INTRODUCIR NUEVO CONTACTO")
